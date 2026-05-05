@@ -17,6 +17,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+uint8_t Key_Scan(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
 
 /* USER CODE END PTD */
 
@@ -44,6 +45,18 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+uint8_t Key_Scan(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin) {
+    // 假设按键按下为低电平 (GPIO_PIN_RESET)
+    if(HAL_GPIO_ReadPin(GPIOx, GPIO_Pin) == GPIO_PIN_RESET) {
+        HAL_Delay(20); // 简单消抖
+        if(HAL_GPIO_ReadPin(GPIOx, GPIO_Pin) == GPIO_PIN_RESET) {
+            while(HAL_GPIO_ReadPin(GPIOx, GPIO_Pin) == GPIO_PIN_RESET); // 等待释放
+            return 1; // 按键按下
+        }
+    }
+    return 0; // 无按键
+}
 
 /* USER CODE END 0 */
 

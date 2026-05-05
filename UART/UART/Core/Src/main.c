@@ -131,10 +131,10 @@ int main(void)
   MX_I2C1_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  OLED_Init();
-  OLED_Clear();
+	  OLED_Init();
+	  OLED_Clear();
   
-        OLED_Clear();
+      OLED_Clear();
 	  
 	  OLED_ShowCHinese(0,0,17,0);
 	  OLED_ShowCHinese(16,0,18,0);
@@ -217,7 +217,7 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-// 串口接收回调函数（必须加！）
+// 串口接收回调函数
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
     if(huart->Instance == USART1)
