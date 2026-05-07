@@ -2,5 +2,4 @@
 
 Work with Stm32CubeMX\&Keil5
 
-工具由B站 @江协科技 提供
 
