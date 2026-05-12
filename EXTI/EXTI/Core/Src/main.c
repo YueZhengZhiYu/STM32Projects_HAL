@@ -187,7 +187,7 @@ OLED_Init();
 	  /*第三行*/
 	  OLED_ShowString(0,6,"2026.4.27",16,0);
 
-	  HAL_Delay(10000);
+	  HAL_Delay(5000);
 	  
 	  OLED_Clear();
 
@@ -198,7 +198,7 @@ OLED_Init();
   while (1)
   {
     /* USER CODE END WHILE */
-
+ProcessKeyAndControlLED();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

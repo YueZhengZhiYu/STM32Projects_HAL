@@ -121,21 +121,15 @@ int main(void)
 	  /*第二行*/
 	  OLED_ShowCHinese(0,3,11,0); 
 	  OLED_ShowCHinese(16,3,12,0); 
-	  OLED_ShowString(32,3,"A23xxyy",16,0);
-	  OLED_ShowCHinese(80,3,13,0); 
-	  OLED_ShowCHinese(96,3,14,0); 
-	  OLED_ShowCHinese(112,3,15,0); 
-	  OLED_ShowCHinese(112,3,15,0);
+	  OLED_ShowString(32,3,"A2361",16,0);
+	  // 修改为显示“宇”，索引 17（字库末尾）
+	  OLED_ShowCHinese(80,3,17,0);   // 原依次显示乐、正、徵、徵，现改为一个“宇”
 	  
 	  /*第三行*/
 	  OLED_ShowString(0,6,"2026.4.27",16,0);
 	  
 	  HAL_Delay(5000);
 	  OLED_Clear();
-	  
-	  
-	  
-	  
 	  
     /* USER CODE END WHILE */
 
@@ -201,6 +195,7 @@ void Error_Handler(void)
   }
   /* USER CODE END Error_Handler_Debug */
 }
+
 #ifdef USE_FULL_ASSERT
 /**
   * @brief  Reports the name of the source file and the source line number
