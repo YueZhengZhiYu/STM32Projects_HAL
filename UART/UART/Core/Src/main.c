@@ -146,16 +146,15 @@ int main(void)
 	  /*第二行*/
 	  OLED_ShowCHinese(0,3,11,0); 
 	  OLED_ShowCHinese(16,3,12,0); 
-	  OLED_ShowString(32,3,"A23xxyy",16,0);
-	  OLED_ShowCHinese(80,3,13,0); 
-	  OLED_ShowCHinese(96,3,14,0); 
-	  OLED_ShowCHinese(112,3,15,0); 
-	  OLED_ShowCHinese(112,3,16,0);
+	  OLED_ShowString(32,3,"A236144",16,0);
+	  OLED_ShowCHinese(80,3,24,0);  
+	  OLED_ShowCHinese(96,3,25,0); 
+	  OLED_ShowCHinese(112,3,26,0);
 	  
 	  /*第三行*/
-	  OLED_ShowString(0,6,"2026.4.27",16,0);
+	  OLED_ShowString(0,6,"2026.5.18",16,0);
 
-	  HAL_Delay(3000);
+	  HAL_Delay(10000);
 	  
 	  OLED_Clear();
 	

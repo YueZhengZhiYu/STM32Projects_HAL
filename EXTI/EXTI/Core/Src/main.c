@@ -179,13 +179,13 @@ OLED_Init();
 	  /*第二行*/
 	  OLED_ShowCHinese(0,3,11,0); 
 	  OLED_ShowCHinese(16,3,12,0); 
-	  OLED_ShowString(32,3,"A236112",12,0);
-	  OLED_ShowCHinese(80,3,17,0); 
-	  OLED_ShowCHinese(96,3,18,0); 
-	  OLED_ShowCHinese(112,3,19,0); 
+	  OLED_ShowString(32,3,"A236144",12,0);
+	  OLED_ShowCHinese(80,3,23,0); 
+	  OLED_ShowCHinese(96,3,24,0); 
+	  OLED_ShowCHinese(112,3,25,0); 
 	  
 	  /*第三行*/
-	  OLED_ShowString(0,6,"2026.4.27",16,0);
+	  OLED_ShowString(0,6,"2026.5.15",16,0);
 
 	  HAL_Delay(5000);
 	  
