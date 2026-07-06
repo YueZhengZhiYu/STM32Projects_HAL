@@ -204,6 +204,7 @@ void Error_Handler(void)
   * @param  line: assert_param error line source number
   * @retval None
   */
+
 void assert_failed(uint8_t *file, uint32_t line)
 {
   /* USER CODE BEGIN 6 */

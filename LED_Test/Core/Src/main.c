@@ -5,7 +5,7 @@
   * @brief          : Main program body
   ******************************************************************************
   */
-/* USER CODE END Header */
+/* USER CODE E·ND Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "gpio.h"
